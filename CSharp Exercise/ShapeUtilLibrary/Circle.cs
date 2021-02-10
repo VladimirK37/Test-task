@@ -2,6 +2,9 @@
 
 namespace ShapeUtilLibrary
 {
+    /// <summary>
+    /// Class defines circle shape
+    /// </summary>
     public class Circle : Shape
     {
         private double Radius { get; }
@@ -11,6 +14,7 @@ namespace ShapeUtilLibrary
             Radius = radius;
         }
 
+        ///<inheritdoc/>
         public override double GetArea()
         {
             if (!IsValid())
@@ -19,6 +23,7 @@ namespace ShapeUtilLibrary
             return Math.PI * Math.Pow(Radius, 2);
         }
 
+        ///<inheritdoc/>
         public override bool IsValid()
         {
             return Radius > 0;

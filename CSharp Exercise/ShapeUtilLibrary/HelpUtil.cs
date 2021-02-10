@@ -1,5 +1,8 @@
 ﻿namespace ShapeUtilLibrary
 {
+    /// <summary>
+    /// Class contains auxiliary methods.
+    /// </summary>
     public static class HelpUtil
     {
         public static void SwapVariables(ref double var1, ref double var2)
